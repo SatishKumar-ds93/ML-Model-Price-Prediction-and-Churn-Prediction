@@ -1,1 +1,1 @@
-# ML-Model-Price-Prediction-and-Churn-Analysis
+# ML Model Airbnb Price Prediction and Customer Churn Prediction
