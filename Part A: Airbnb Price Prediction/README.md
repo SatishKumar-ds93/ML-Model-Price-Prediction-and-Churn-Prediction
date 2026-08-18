@@ -1,4 +1,4 @@
-# Airbnb Price Prediction
+# Project: Airbnb Price Prediction and Insights
 
 ### Introduction
 
@@ -55,6 +55,8 @@ This project focuses on building a Machine Learning regression model to predict 
 ## 1. Data Collection & Import
 
 **Dataset** [Airbnb_dataset](https://docs.google.com/spreadsheets/d/1N7P0euUjfjB8XXdTBQeicjGjxAOm18wvCRLaQC92a8g/edit?gid=693059640#gid=693059640)
+
+**Dataset Information** [datasetinfo_word](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/blob/main/Part%20A%3A%20Airbnb%20Price%20Prediction/Data%20Information.docx)
 
 **Imported the Airbnb dataset using Pandas.**
 
