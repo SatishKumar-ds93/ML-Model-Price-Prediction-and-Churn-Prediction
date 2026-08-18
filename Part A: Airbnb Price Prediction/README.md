@@ -30,7 +30,9 @@
 
 - Create a user-input prediction application using Streamlit.
 
-### Project Workflow
+
+## Project Workflow
+
 
 ## 1. Data Collection & Import
 
@@ -244,7 +246,7 @@ The model explains approximately **55.3%** of the variation in log-transformed A
 
 - Analyze premium/luxury listings separately because these listings may be underpredicted.
 
-## Prediction Application
+## Prediction User Input
 
 **The trained pipeline was saved as:**
 
@@ -262,7 +264,7 @@ airbnb_price_prediction_pipeline.pkl
 
 - Number of Amenities
 
-**For example:**
+**For example: enter input for future prediction**
 
 Property Type: Apartment
 
