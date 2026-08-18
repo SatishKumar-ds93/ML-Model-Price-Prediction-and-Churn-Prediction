@@ -2,11 +2,7 @@
 
 ### Introduction
 
-- This project focuses on building a Machine Learning regression model to predict the price of Airbnb listings.
-
-- The objective is to understand the factors influencing Airbnb prices and develop a model that can provide price estimates for new listings.
-
-- The project follows an end-to-end workflow from data cleaning and EDA to model deployment using Streamlit.
+This project focuses on building a Machine Learning regression model to predict the price of Airbnb listings. The objective is to understand the factors influencing Airbnb prices and develop a model that can provide price estimates for new listings. The project follows an end-to-end workflow from data cleaning and EDA to model deployment using Streamlit.
 
 - The project uses Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
 
@@ -33,8 +29,32 @@
 
 ## Project Workflow
 
+**1. Data Collection & Import**
+
+**2. Data Cleaning**
+
+**3. Exploratory Data Analysis (EDA)**
+
+**4. Outlier Analysis**
+
+**5. Feature Engineering**
+
+**6. Feature Selection**
+
+**7. Data Preprocessing**
+
+**8. Model Development**
+
+**9. Hyperparameter Tuning**
+
+**10. Final Model Performance**
+
+**11. Prediction User Input**
+
 
 ## 1. Data Collection & Import
+
+**Dataset** [Airbnb_dataset](https://docs.google.com/spreadsheets/d/1N7P0euUjfjB8XXdTBQeicjGjxAOm18wvCRLaQC92a8g/edit?gid=693059640#gid=693059640)
 
 **Imported the Airbnb dataset using Pandas.**
 
@@ -139,7 +159,7 @@ amenities_count
 
 **The preprocessing and model were combined into a Pipeline**.
 
-## 8. Train-Test Split
+### Train-Test Split
 
 - Split the data into training and testing datasets.
 
@@ -147,7 +167,7 @@ amenities_count
 
 - The test data was kept for final performance evaluation.
 
-## 9. Model Development
+## 8. Model Development
 
 Three regression algorithms were compared:
 
@@ -165,7 +185,7 @@ Evaluation metrics:
 
 **R²**
 
-## 10. Hyperparameter Tuning
+## 9. Hyperparameter Tuning
 
 RandomizedSearchCV was used to optimize Random Forest and Gradient Boosting.
 
@@ -187,7 +207,8 @@ were tested.
 
 The tuned **Gradient Boosting mode**l produced the best overall performance.
 
-## 11. Final Model Performance
+
+## 10. Final Model Performance
 
 Metric	Final Gradient Boosting
 
@@ -201,52 +222,8 @@ Metric	Final Gradient Boosting
 
 The model explains approximately **55.3%** of the variation in log-transformed Airbnb prices in the test dataset.
 
-## 12. Key Insights
 
-- Room type is an important factor in Airbnb pricing.
-
-- Property type influences the estimated listing price.
-
-- Neighbourhood/location has an important role in price differences.
-
-- Listings with more amenities can have greater pricing potential.
-
-- A high number of reviews does not necessarily mean a higher price.
-
-- Some expensive/premium listings are harder for the model to predict accurately.
-
-- Hyperparameter tuning improved the Gradient Boosting model's performance.
-
-**The final model can be used to estimate prices for new Airbnb listings.**
-
-
-## 13. Recommendations
-
-- Hosts should compare their listing with similar properties in the same neighbourhood.
-
-- Use the model as a pricing benchmark, rather than an exact guaranteed price.
-
-**Include additional features such as:**
-
-- accommodates
-
-- bedrooms
-
-- bathrooms
-
-- beds
-
-- review_scores_rating
-
-- latitude
-
-- longitude
-
-- Improve the amenities feature by identifying specific amenities such as Wi-Fi, parking, pool, kitchen, and air conditioning.
-
-- Analyze premium/luxury listings separately because these listings may be underpredicted.
-
-## Prediction User Input
+## 11. Prediction User Input
 
 **The trained pipeline was saved as:**
 
@@ -280,7 +257,53 @@ Amenities: 15
 
 A Streamlit local web application was also created so users can enter listing information and receive an estimated Airbnb price.
 
-## Conclusion
+## Key Insights
+
+- Room type is an important factor in Airbnb pricing.
+
+- Property type influences the estimated listing price.
+
+- Neighbourhood/location has an important role in price differences.
+
+- Listings with more amenities can have greater pricing potential.
+
+- A high number of reviews does not necessarily mean a higher price.
+
+- Some expensive/premium listings are harder for the model to predict accurately.
+
+- Hyperparameter tuning improved the Gradient Boosting model's performance.
+
+**The final model can be used to estimate prices for new Airbnb listings.**
+
+
+## Recommendations
+
+- Hosts should compare their listing with similar properties in the same neighbourhood.
+
+- Use the model as a pricing benchmark, rather than an exact guaranteed price.
+
+**Include additional features such as:**
+
+- accommodates
+
+- bedrooms
+
+- bathrooms
+
+- beds
+
+- review_scores_rating
+
+- latitude
+
+- longitude
+
+- Improve the amenities feature by identifying specific amenities such as Wi-Fi, parking, pool, kitchen, and air conditioning.
+
+- Analyze premium/luxury listings separately because these listings may be underpredicted.
+
+
+# Conclusion
 
 Successfully developed an end-to-end Airbnb Price Prediction Machine Learning project. It performed data cleaning, EDA, outlier handling, feature engineering, preprocessing, model comparison, and hyperparameter tuning. The Tuned **Gradient Boosting** was selected as the final model.
 
