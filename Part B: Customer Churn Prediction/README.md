@@ -30,36 +30,37 @@ Develop targeted retention strategies
 
 **1. Data exploration and analysis**
 
-**2. Data cleaning and missing-value treatment**
+**2. Exploratory Data Analysis (EDA)**
 
-**3. Exploratory Data Analysis (EDA)**
+**3. Data Preprocessing & Cleaning and missing-value treatment**
 
-**4. Feature engineering**
+**4. Feature engineering**: Correlation analysis**
 
-**5. Correlation analysis**
+**5. Data Modeling:** Class-imbalance handling using SMOTE
 
-**6. Class-imbalance handling using SMOTE**
+**6. Model development**
 
-**7. Train/test splitting**
+**7. Initial Model Performance**
 
-**8. Model development**
+**8. Hyperparameter tuning**
 
-**9. Hyperparameter tuning**
+**9. Cross validation matrix**
 
-**10. Model comparison**
+**10. Model Comparison**
 
 **11. Final model selection**
 
-**12. Confusion matrix and ROC-AUC evaluation**
+**12. Final Model Interpretation**
 
-**13. Feature importance analysis**
+**13. ROC-AUC evaluation**
 
 **14. New customer churn prediction**
 
 The objective is not only to build a predictive model, but also to generate actionable business insights that can help reduce customer churn.
 
+## 1. Data Exploration
 
-## Dataset
+### Dataset
 
 The project uses the Customer_data dataset containing **7,043 custome**r records and **21 columns**, including the target variable Churn.
 
@@ -149,7 +150,7 @@ One-Hot Encoding
 
 StandardScaler
 
-## 1. Exploratory Data Analysis EDA
+## 2. Exploratory Data Analysis EDA
 
 ### A. Target Variable Distribution**
 
@@ -265,9 +266,19 @@ Discounts for high-value/high-risk customers
 
 Value-based service packages
 
-The notebook identifies MonthlyCharges as an important churn-related variable.
+The notebook identifies Monthly Charges as an important churn-related variable.
 
-## 3. Numerical Feature Analysis
+## 3. Data Preprocessing & Cleaning
+
+- The dataset initially contained 11 missing values in TotalCharges. All other columns had no missing values.
+
+- The missing TotalCharges values were handled using the median: churn total charges
+
+- After treatment, the dataset contained no missing values.
+
+## 4. Feature Engineering
+
+### A. Numerical Feature Analysis
 
 **The main numerical variables were:**
 
@@ -291,7 +302,7 @@ The notebook identifies MonthlyCharges as an important churn-related variable.
 
 - The notebook's numerical analysis also found strong relationships involving TotalCharges.
 
-## 4. Correlation Analysis
+### B. Correlation Analysis
 
 **The correlation heatmap produced the following important relationships:**
 
@@ -317,17 +328,12 @@ The notebook identifies MonthlyCharges as an important churn-related variable.
 
 - MonthlyCharges also has a moderately strong relationship with TotalCharges at 0.65.
 
-- The correlation between tenure and MonthlyCharges is relatively weak at 0.25.
+- The correlation between tenure and Monthly Charges is relatively weak at 0.25.
 
-## 5. Data Preprocessing
 
-- The dataset initially contained 11 missing values in TotalCharges. All other columns had no missing values.
+## 5. Data Modeling
 
-- The missing TotalCharges values were handled using the median: churn total charges
-
-- After treatment, the dataset contained no missing values.
-
-## 6. Machine Learning Pipeline
+### A. Machine Learning Pipeline
 
 The modeling workflow was designed to prevent inconsistent preprocessing between training and prediction.
 
@@ -365,7 +371,7 @@ Prediction
 
 The training set contained 5,634 records and the testing set contained 1,409 records.
 
-## 7. Handling Class Imbalance
+### B. Handling Class Imbalance
 
 - Because only 26.54% of customers belong to the churn class, SMOTE was applied to the training data.
 
@@ -375,7 +381,7 @@ The training set contained 5,634 records and the testing set contained 1,409 rec
 
 This helps avoid contaminating the test data during model evaluation.
 
-## 8. Models Developed
+## 6. Models Developed
 
 Three classification algorithms were evaluated:
 
@@ -391,7 +397,7 @@ A tree-based ensemble model capable of capturing nonlinear relationships.
 
 A gradient-boosting algorithm designed to capture complex patterns and interactions.
 
-## 9. Initial Model Performance
+## 7. Initial Model Performance
 
 Before hyperparameter tuning:
 
@@ -405,7 +411,7 @@ Before hyperparameter tuning:
 
 The notebook shows that Logistic Regression had the strongest recall before tuning, while XGBoost had the highest accuracy and ROC-AUC.
 
-## 10. Hyperparameter Tuning
+## 8. Hyperparameter Tuning
 
 - RandomizedSearchCV with 3-fold cross-validation was used to tune all three models.
 
@@ -419,9 +425,9 @@ This was appropriate because the churn dataset is imbalanced and both precision 
 
 - solver = lbfgs
 
-**Cross-validation F1:**
+## 9. Cross-Validation
 
--0.6330
+**Cross-validation F1:**-0.6330
 
 **Best Random Forest Parameters**
 
@@ -453,7 +459,7 @@ This was appropriate because the churn dataset is imbalanced and both precision 
 
 The tuned XGBoost model achieved the highest cross-validation F1 score among the three tuned models.
 
-## 11. Final Model Comparison
+## 10. Final Model Comparison
 
 After hyperparameter tuning, the final test-set results were:
 
@@ -467,9 +473,9 @@ Tuned XGBoost	77.00%	55.19%	71.12%	62.15%	84.08%
 
 The notebook selected Tuned XGBoost because it achieved the highest F1 score.
 
-## 12. Final Model: Tuned XGBoost
+## 11. Final Model: Tuned XGBoost
 
-**The final model achieved:
+**The final model achieved:**
 
 - Accuracy  : 77.00%
 
@@ -497,7 +503,7 @@ XGBoost provided the best overall balance among the evaluated metrics:
 
 The model was therefore selected as the final model based on the project's F1-based model-selection approach.
 
-## 13. Final Model Interpretation
+## 12. Final Model Interpretation
 
 The final classification report shows:
 
@@ -519,7 +525,7 @@ Therefore, the prediction should be used as a prioritization tool for retention 
 
 The final test-set classification report is recorded in the notebook.
 
-## 14. ROC-AUC
+## 13. ROC-AUC
 
 - The final XGBoost model achieved: ROC-AUC = 0.8408
 
@@ -645,7 +651,7 @@ Providing proactive technical assistance
 
 Creating service packages for high-risk customers
 
-### Proposed Customer Retention Strategy
+## Proposed Customer Retention Strategy
 
 The model can support a risk-based retention strategy:
 
@@ -697,7 +703,7 @@ Loyalty programs
 
 Early engagement campaigns
 
-## 17.New Customer Prediction
+## 14.New Customer Prediction
 
 The project also includes an interactive prediction function:
 
