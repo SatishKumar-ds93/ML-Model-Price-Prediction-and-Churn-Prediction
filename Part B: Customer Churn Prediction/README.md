@@ -527,7 +527,7 @@ The final test-set classification report is recorded in the notebook.
 
 - The model therefore provides useful ranking/discrimination capability for identifying customers with different levels of churn risk.
 
-## 15. Feature Importance
+## Feature Importance
 
 The XGBoost feature-importance analysis identified the following important features:
 
@@ -567,7 +567,7 @@ The most influential feature in the final model was month-to-month contract stat
 
 - Important: feature importance indicates predictive contribution; it does not prove that a feature directly causes churn.
 
-## 16. Key Business Insights
+## Key Business Insights
 
 Based on the EDA and final model, the main findings are:
 
@@ -731,7 +731,7 @@ The user enters customer information such as:
 
 *Total charges*
 
-**The trained XGBoost pipeline then produces**:
+**The trained XG Boost pipeline then produces**:
 
 - Churn prediction
 
@@ -747,35 +747,35 @@ This fulfills the project requirement to generate predictions for new customer d
 
 An example customer was entered with:
 
-Gender: Female
+Gender: **Female**
 
-Senior Citizen: 0
+Senior Citizen: **0**
 
-Partner: Yes
+Partner: **Yes**
 
-Dependents: No
+Dependents: **No**
 
-Tenure: 5 months
+Tenure: **5 months**
 
-Phone Service: Yes
+Phone Service: **Yes**
 
-Internet Service: Fiber optic
+Internet Service: **Fiber optic**
 
-Online Security: Yes
+Online Security: **Yes**
 
-Online Backup: Yes
+Online Backup: **Yes**
 
-Device Protection: Yes
+Device Protection: **Yes**
 
-Tech Support: Yes
+Tech Support: **Yes**
 
-Contract: One year
+Contract: **One year**
 
-Paperless Billing: Yes
+Paperless Billing: **Yes**
 
-Monthly Charges: 100
+Monthly Charges: **100**
 
-Total Charges: 150
+Total Charges: **150**
 
 **The model produced:**
 
@@ -787,7 +787,7 @@ Total Charges: 150
 
 The notebook therefore demonstrates how the trained model can be applied to an individual new customer rather than only evaluating historical test data.
 
-## 18. Project Limitations
+## Project Limitations
 
 Although the model provides useful predictive performance, there are several limitations.
 
@@ -836,6 +836,63 @@ Possible improvements include:
 - Monitor model performance on new customer data
 
 - Build automated retention recommendations
+
+## Key insights
+
+**1. Customer churn is imbalanced** — non-churners are significantly higher than churners, making churn detection more challenging.
+
+**2. Senior citizens show higher churn tendency**, indicating this group may require additional retention attention.
+
+**3. Fiber optic customers have higher churn** compared with DSL customers, suggesting possible concerns related to pricing, service quality, or reliability.
+
+**4. Customers with higher Monthly Charges** tend to churn more, indicating possible price sensitivity.
+
+**5. Short-tenure customers are more likely to churn,** making the early customer lifecycle an important retention period.
+
+**6. Electronic-check users have the highest churn** rate among payment methods analyzed.
+
+**7. Month-to-month contracts are a major churn-risk segment,** as shown by the contract analysis and model results.
+
+**8. The tuned models show that Logistic Regression achieved the highest** F1 score (64.70%), while XG Boost achieved 66.22% recall, making both useful depending on whether the priority is balanced performance or catching more churners.
+
+
+## Recommendations
+
+**1. Target short-tenure customers**
+
+- Provide strong onboarding and early engagement.
+
+- Conduct 30/60/90-day follow-ups.
+
+- Offer early loyalty incentives.
+
+**2. Encourage longer-term contracts**
+
+Provide discounts or loyalty benefits for customers moving from month-to-month to one-year/two-year contracts.
+
+**3. Improve Fiber Optic service**
+
+Investigate service reliability, pricing, technical problems, and customer satisfaction.
+
+**4. Address high monthly charges**
+
+Introduce flexible pricing, discounts, or bundled service plans for price-sensitive customers.
+
+**5. Promote alternative payment methods**
+
+Encourage electronic-check users to switch to automatic bank transfer or credit-card payments.
+
+**6. Create targeted senior-citizen retention programs**
+
+Offer personalized discounts, loyalty rewards, and dedicated support.
+
+**7. Use the churn model for targeted campaigns**
+
+Identify high-risk customers and prioritize them for personalized retention offers rather than applying the same strategy to every customer.
+
+**8. Monitor churn continuously**
+
+Track predicted high-risk customers and evaluate whether retention campaigns actually reduce churn over time
 
 # Conclusion
 
