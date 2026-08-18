@@ -4,7 +4,7 @@
 
 Customer churn occurs when a customer stops using a company's products or services. Predicting churn enables organizations to identify high-risk customers and take proactive retention actions before customers leave.
 
-This project develops an end-to-end Customer Churn Prediction system using Machine Learning. The project analyzes customer demographic, service, contract, billing, and payment information to predict whether a customer is likely to churn.
+This project develops a Prototype an Interactive Development Environment (IDE) Customer Churn Prediction system using Machine Learning. The project analyzes customer demographic, service, contract, billing, and payment information to predict whether a customer is likely to churn.
 
 ## Business Problem
 
