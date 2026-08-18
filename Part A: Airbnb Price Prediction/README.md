@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This project focuses on building a Machine Learning regression model to predict the price of Airbnb listings. The objective is to understand the factors influencing Airbnb prices and develop a model that can provide price estimates for new listings. The project follows an end-to-end workflow from data cleaning and EDA to model deployment using Streamlit.
+This project focuses on building a Machine Learning regression model to predict the price of Airbnb listings. The objective is to understand the factors influencing Airbnb prices and develop a model that can provide price estimates for new listings. The project follows local workflow from data cleaning and EDA to model deployment using Streamlit.
 
 - The project uses Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
 
