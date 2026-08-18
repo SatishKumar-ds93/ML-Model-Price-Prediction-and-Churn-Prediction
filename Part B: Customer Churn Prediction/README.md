@@ -64,6 +64,8 @@ The objective is not only to build a predictive model, but also to generate acti
 
 **Dataset**: [CustomerChurn_dataset](https://docs.google.com/spreadsheets/d/1rnBO9F9xdSUY-WpeOJilMxMRZT-hwwWq6O98OHreY0k/edit?gid=1602415961#gid=1602415961)
 
+**Dataset Info** [datainfo_word](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/blob/main/Part%20B%3A%20Customer%20Churn%20Prediction/Data%20Info.docx)
+
 The project uses the Customer_data dataset containing **7,043 custome**r records and **21 columns**, including the target variable Churn.
 
 - Main feature categories
