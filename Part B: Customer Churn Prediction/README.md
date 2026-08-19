@@ -26,7 +26,7 @@ Reduce potential revenue loss
 
 Develop targeted retention strategies
 
-### The project covers:
+### Project covers: Check my [Notebook](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/blob/main/Part%20B%3A%20Customer%20Churn%20Prediction/Customer%20Churn%20Analysis%20Userinput.ipynb)
 
 **1. Data exploration and analysis**
 
