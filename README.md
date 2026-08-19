@@ -2,8 +2,8 @@
 
 These two projects demonstrate the application of **Machine Learning** to solve real-world business problems. The **Airbnb Price Prediction** project uses regression techniques to predict listing prices based on factors such as property type, room type, location, and amenities, while the **Customer Churn Prediction** project uses classification techniques to identify customers at risk of leaving based on demographic, account, service, and payment information. Both projects follow a *prototype machine learning local workflow*, including **data cleaning**, **exploratory data analysis EDA**, **feature engineering**, **model development**, **evaluation**, and **hyperparameter tuning**, with a focus on generating practical business insights and supporting data-driven decision-making.
 
-### Project- Part A: Airbnb Price Prediction and Insights
-### Project- Part B: Customer Churn Prediction
+### Project- [Part A: Airbnb Price Prediction and Insights](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/tree/main/Part%20A%3A%20Airbnb%20Price%20Prediction)
+### Project- [Part B: Customer Churn Prediction](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/tree/main/Part%20B%3A%20Customer%20Churn%20Prediction)
 
 ## Project Overview
 
