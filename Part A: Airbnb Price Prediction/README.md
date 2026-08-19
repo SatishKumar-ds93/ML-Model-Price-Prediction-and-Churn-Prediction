@@ -27,7 +27,7 @@ This project focuses on building a Machine Learning regression model to predict 
 - Create a user-input prediction application using Streamlit.
 
 
-## Project Workflow
+## Project Workflow: Check my [Notebook](https://github.com/SatishKumar-ds93/ML-Model-Price-Prediction-and-Churn-Prediction/blob/main/Part%20A%3A%20Airbnb%20Price%20Prediction/Airbnb%20Price%20Prediction%20Userinput.ipynb)
 
 **1. Data Collection & Import**
 
