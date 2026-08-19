@@ -34,7 +34,7 @@ Develop targeted retention strategies
 
 **3. Data Preprocessing & Cleaning and missing-value treatment**
 
-**4. Feature engineering**: Correlation analysis**
+**4. Feature engineering**: Correlation analysis
 
 **5. Data Modeling:** Class-imbalance handling using SMOTE
 
