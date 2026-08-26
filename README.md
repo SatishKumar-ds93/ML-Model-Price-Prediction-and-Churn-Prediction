@@ -11,10 +11,13 @@ These two projects demonstrate the application of **Machine Learning** to solve 
 
 This project, **Airbnb Price Prediction and Insights**, develops a machine learning regression model to predict Airbnb listing prices based on factors such as *property type*, *room type*, *location*, *amenities*, and *listing characteristics*. The project follows a prototype including **data cleaning**, **exploratory data analysis EDA**, **outlier handling**, **feature engineering**, **model comparison**, and **hyperparameter tuning**. The final **Gradient Boosting model** achieved an **R² of 0.5533**, **RMSE of 0.4374**, and **MAE of 0.3359**, and can be used to estimate prices for new Airbnb listings. The analysis also provides practical pricing recommendations to help hosts compare their listings with similar properties and make more informed pricing decisions.
 
+#### Model: Gradient Boosting
 
 ## Project Overview
 
 ### Part B: Customer Churn Prediction
 
 This **Customer Churn Prediction** project uses machine learning to predict whether a customer is likely to churn based on their *demographic*, *account*, *service usage*, and *payment information*. The project follows a prototype including **data cleaning**, **exploratory data analysis EDA**, **preprocessing**, **feature engineering**, **model development**, **model comparison**, and **hyperparameter tuning**. Three classification models—**Logistic Regression**, **Random Forest**, and **XGBoost**—were evaluated, with XGBoost selected as the final model after tuning. The project also identifies key churn-risk factors and provides actionable recommendations to help businesses identify high-risk customers, develop targeted retention strategies, and reduce potential customer loss.
+
+#### Model: XGBoost (eXtreme Gradient Boosting)
 
